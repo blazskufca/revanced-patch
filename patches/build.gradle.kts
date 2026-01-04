@@ -1,13 +1,19 @@
-group = "app.revanced"
+group = "blazskufca.revanced"
 
 patches {
     about {
-        name = "ReVanced Patches template"
-        description = "Patches template for ReVanced"
-        source = "git@github.com:revanced/revanced-patches-template.git"
-        author = "ReVanced"
-        contact = "contact@revanced.app"
-        website = "https://revanced.app"
+        name = "ReVanced Patches by blazskufca"
+        description = "Patches for ReVanced"
+        source = "git@github.com:blazskufca/revanced-patches.git"
+        author = "blazskufca"
+        contact = "877198+blazskufca@users.noreply.github.com"
+        website = "https://blazskufca.com"
         license = "GNU General Public License v3.0"
+    }
+}
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+    compilerOptions {
+        freeCompilerArgs.add("-Xcontext-receivers")
     }
 }

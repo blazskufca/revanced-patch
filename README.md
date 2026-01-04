@@ -5,7 +5,7 @@
       media="(prefers-color-scheme: dark)"
       srcset="assets/revanced-headline/revanced-headline-vertical-dark.svg"
     >
-    <img 
+    <img
       width="256px"
       src="assets/revanced-headline/revanced-headline-vertical-light.svg"
     >
@@ -51,86 +51,39 @@
       <picture>
          <source height="24px" media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/13122796/178032714-c51c7492-0666-44ac-99c2-f003a695ab50.png" />
          <img height="24px" src="https://user-images.githubusercontent.com/13122796/178032714-c51c7492-0666-44ac-99c2-f003a695ab50.png" />
-     </picture>
+      </picture>
    </a>
    <br>
    <br>
    Continuing the legacy of Vanced
 </p>
 
-# 👋🧩 ReVanced Patches template
+# 🧩 ReVanced Patches
 
-![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/ReVanced/revanced-patches-template/release.yml)
 ![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)
 
-Template repository for ReVanced Patches.
+This repository contains custom ReVanced patches by blazskufca.
 
-## ❓ About
+## 📦 Patches
 
-This is a template to create a new ReVanced Patches repository.  
-The repository can have multiple patches, and patches from other repositories can be used together.
+The following patches are included in this repository:
 
-For an example repository, see [ReVanced Patches](https://github.com/revanced/revanced-patches).
+| Application | Patch Name | Description |
+| ----------- | ---------- | ----------- |
+| **Mladinska Plus** (`com.mladinska.mkplus`) | `Unlock Plus` | Forces the app to report 'plus' permissions to the server. |
 
-## 🚀 Get started
 
-To start using this template, follow these steps:
+## 🚀 How to use
 
-1. [Create a new repository using this template](https://github.com/new?template_name=revanced-patches-template&template_owner=ReVanced)
-2. Set up the [build.gradle.kts](patches/build.gradle.kts) file (Specifically, the [group of the project](patches/build.gradle.kts#L1),
-and the [About](patches/build.gradle.kts#L5-L11))
-3. Update dependencies in the [libs.versions.toml](gradle/libs.versions.toml) file
-4. [Create a pass-phrased GPG master key and subkey](https://mikeross.xyz/create-gpg-key-pair-with-subkeys/)
-   1. Add the private key as a secret named [GPG_PRIVATE_KEY](.github/workflows/release.yml#L52) to your repository
-   2. Add the passphrase as a secret named [GPG_PASSPHRASE](.github/workflows/release.yml#L53) to your repository
-   3. Add the fingerprint of the GPG subkey as a secret named [GPG_FINGERPRINT](.github/workflows/release.yml#L54) to your repository
-5. Set up the [README.md](README.md) file[^1] (e.g, title, description, license, summary of the patches
-that are included in the repository), the [issue templates](.github/ISSUE_TEMPLATE)[^2]  and the [contribution guidelines](CONTRIBUTING.md)[^3]
+To usage these patches, you need to bundle them.
 
-🎉 You are now ready to start creating patches!
+1. Clone this repository
+2. Build the patches using `./gradlew patches:build`
+3. Use the generated `.jar` file with ReVanced Manager or CLI.
 
-[^1]: [Example README.md file](https://github.com/ReVanced/revanced-patches/blob/main/README.md)
-[^2]: [Example issue templates](https://github.com/ReVanced/revanced-patches/tree/main/.github/ISSUE_TEMPLATE)
-[^3]: [Example contribution guidelines](https://github.com/ReVanced/revanced-patches/blob/main/CONTRIBUTING.md)
+## Import into ReVanced Manager
+<img alt="Use alternative sources" src="https://github.com/user-attachments/assets/28931c72-fd0b-4321-904e-5860aba92124" />
 
-## 🔘 Optional steps
+<img alt="Configure alternative source" src="https://github.com/user-attachments/assets/aca2184f-fb3c-4fd1-805d-96d3cf093a76" />
 
-You can also add the following things to the repository:
 
-- API documentation, if you want to publish your patches as a library
-
-## 🧑‍💻 Usage
-
-To develop and release ReVanced Patches using this template, some things need to be considered:
-
-- Development starts in feature branches. Once a feature branch is ready, it is squashed and merged into the `dev` branch
-- The `dev` branch is merged into the `main` branch once it is ready for release
-- Semantic versioning is used to version ReVanced Patches. ReVanced Patches have a public API for other patches to use
-- Semantic commit messages are used for commits
-- Commits on the `dev` branch and `main` branch are automatically released
-via the [release.yml](.github/workflows/release.yml) workflow, which is also responsible for generating the changelog
-and updating the version of ReVanced Patches. It is triggered by pushing to the `dev` or `main` branch.
-The workflow uses the `publish` task to publish the release of ReVanced Patches
-- The `buildAndroid` task is used to build ReVanced Patches so that it can be used on Android.
-The `publish` task depends on the `buildAndroid` task, so it will be run automatically when publishing a release.
-
-## 📚 Everything else
-
-### 📙 Contributing
-
-Thank you for considering contributing to ReVanced Patches template.  
-You can find the contribution guidelines [here](CONTRIBUTING.md).
-
-### 🛠️ Building
-
-To build ReVanced Patches template,
-you can follow the [ReVanced documentation](https://github.com/ReVanced/revanced-documentation).
-
-## 📜 Licence
-
-ReVanced Patches template is licensed under the GPLv3 licence.
-Please see the [license file](LICENSE) for more information.
-[tl;dr](https://www.tldrlegal.com/license/gnu-general-public-license-v3-gpl-3) you may copy, distribute
-and modify ReVanced Patches template as long as you track changes/dates in source files.
-Any modifications to ReVanced Patches template must also be made available under the GPL,
-along with build & install instructions.
