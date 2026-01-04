@@ -82,8 +82,6 @@ To usage these patches, you need to bundle them.
 3. Use the generated `.jar` file with ReVanced Manager or CLI.
 
 ## Import into ReVanced Manager
-<img alt="Use alternative sources" src="https://github.com/user-attachments/assets/28931c72-fd0b-4321-904e-5860aba92124" />
+<img alt="Use alternative sources" src="https://github.com/user-attachments/assets/0266081f-3dc4-4e1b-858d-a576b1c3f71d" />
 
-<img alt="Configure alternative source" src="https://github.com/user-attachments/assets/aca2184f-fb3c-4fd1-805d-96d3cf093a76" />
-
-
+<img alt="Configure alternative source" src="https://github.com/user-attachments/assets/c4abf13b-a682-46cd-bac3-6cb476ce2d78" />
