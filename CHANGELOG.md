@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/blazskufca/revanced-patch/compare/v1.1.0...v1.1.1) (2026-01-05)
+
+
+### Bug Fixes
+
+* fingerprint for com.sovworks.projecteds? ([568f207](https://github.com/blazskufca/revanced-patch/commit/568f207fba2e1a920b49101e10351c361642268f))
+
 # [1.1.0](https://github.com/blazskufca/revanced-patch/compare/v1.0.3...v1.1.0) (2026-01-05)
 
 
