@@ -127,3 +127,5 @@ node_modules/
 
 # Ignore IDEA files
 .idea/
+
+revanced-documentation/

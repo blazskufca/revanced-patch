@@ -2,3 +2,7 @@ public final class app/revanced/patches/mladinska/UnlockPlusPatchKt {
 	public static final fun getUnlockPlusPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
 }
 
+public final class app/revanced/patches/sovworks/projecteds/UnlockModulesPatchKt {
+	public static final fun getUnlockModulesPatch ()Lapp/revanced/patcher/patch/BytecodePatch;
+}
+
