@@ -17,14 +17,8 @@ val unlockPlusPatch = bytecodePatch(
                 classDef.type.endsWith("AuthUser;") && method.name == "getPermissions"
             }
         }
-        
-        val method = authUserFingerprint.method
-        
-        method.implementation?.let { impl ->
-            impl.instructions = impl.instructions.toMutableList()
-        }
 
-        method.addInstructions(
+        authUserFingerprint.method.addInstructions(
             0,
             """
                 const-string v0, "plus"
