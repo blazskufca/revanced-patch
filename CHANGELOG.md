@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/blazskufca/revanced-patches/compare/v1.0.1...v1.0.2) (2026-01-05)
+
+
+### Bug Fixes
+
+* lib.versions.toml ([3a249f2](https://github.com/blazskufca/revanced-patches/commit/3a249f2d74aad6a200b997a35bc9107c9ccbb6dd))
+
 ## [1.0.1](https://github.com/blazskufca/revanced-patches/compare/v1.0.0...v1.0.1) (2026-01-04)
 
 
