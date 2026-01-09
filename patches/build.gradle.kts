@@ -4,7 +4,7 @@ patches {
     about {
         name = "ReVanced Patches by blazskufca"
         description = "Patches for ReVanced"
-        source = "git@github.com:blazskufca/revanced-patches.git"
+        source = "git@github.com:blazskufca/revanced-patch.git"
         author = "blazskufca"
         contact = "877198+blazskufca@users.noreply.github.com"
         website = "https://blazskufca.com"
